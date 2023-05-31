@@ -20,4 +20,8 @@ module.exports = {
         console.log(req.body);
         resp.json(CompanyModel);
     },
+    getUserCompany: (req, resp) => {
+        console.log(req.body);
+        resp.json([UserModel, CompanyModel]);
+    },
 };
